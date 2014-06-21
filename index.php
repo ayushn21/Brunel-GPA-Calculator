@@ -338,8 +338,12 @@
 									</select>
 								</td>
 							</tr>
-							<tr><td colspan="2">&nbsp;</td></tr>
 						</tbody>
+						<thead>
+							<tr>
+								<td colspan="2">&nbsp;</td>
+							</tr>
+						</thead>
 					</table>
 					<div style="text-align:center;">
 						<button type="button" class="btn btn-success btn-lg" onClick="calculate_result();">Calculate</button>
