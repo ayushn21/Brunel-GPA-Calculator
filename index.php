@@ -3,8 +3,8 @@
 	<head>
 		<title>Brunel GPA Calculator</title>
 		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="bootstrap-3.1.1/js/bootstrap.min.js"></script>		
-		<link rel="stylesheet" type="text/css" href="bootstrap-3.1.1/css/bootstrap.min.css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>	
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
 		<script type="text/javascript">
 			$(document).ready(function(){
