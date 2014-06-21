@@ -70,6 +70,19 @@
 			}
 
 		</script>
+
+		<style>
+		.bottom-banner
+		{
+			font-size:10px;
+			font-family:sans-serif;
+			position:static;
+			bottom:0px;
+			right:0px;
+			text-align:right;
+			text-decoration:none;
+		}
+		</style>
 	</head>
 
 	<body id="body_id" style="display:none;">
@@ -357,6 +370,9 @@
 						</tr>
 					</table>
 				</div>
+			</div>
+			<div class="bottom-banner">
+				<a href="https://github.com/ayushn21/Brunel-GPA-Calculator" target="_blank" class="bottomBanner">GitHub</a> | Built by Ayush Newatia. &copy; <img src="Images/dsotm.jpg" style="height:12px; width:auto;" />
 			</div>
 		</div>
 	</body>
