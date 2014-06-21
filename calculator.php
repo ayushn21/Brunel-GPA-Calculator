@@ -14,8 +14,8 @@ if(isset($_POST['grades_yr2']) && isset($_POST['grades_yr3']))
 	$us_gpa = calculate_us_gpa($grades_yr2_array,$grades_yr3_array);
 
 	$response = array(
-		"UK" => $uk_gpa,
-		"US" => $us_gpa
+		"UK" => round($uk_gpa,2),
+		"US" => round($us_gpa,2)
 		);
 
 	echo json_encode($response);
