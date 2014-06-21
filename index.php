@@ -376,7 +376,7 @@
 				</div>
 			</div>
 			<div class="bottom-banner">
-				<a href="https://github.com/ayushn21/Brunel-GPA-Calculator" target="_blank" class="bottomBanner">GitHub</a> | Built by Ayush Newatia. &copy; <img src="Images/dsotm.jpg" style="height:12px; width:auto;" />
+				<a href="https://github.com/ayushn21/Brunel-GPA-Calculator" target="_blank">GitHub</a> | Built by Ayush Newatia. &copy; <img src="Images/dsotm.jpg" style="height:12px; width:auto;" />
 			</div>
 		</div>
 	</body>
