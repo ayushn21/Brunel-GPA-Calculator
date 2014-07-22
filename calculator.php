@@ -31,13 +31,11 @@ function calculate_uk_gpa($grades_yr2_array, $grades_yr3_array)
 	$denominator = 0;
 
 	global $second_year_credits, $grade_point_array_uk, $third_year_credits;
-	$is_placement = true;
 
 	foreach ($grades_yr2_array as $module => $grade) 
 	{
 		if($grade == "N/A")
 		{
-			$is_placement = false;
 			continue;
 		}
 		else
@@ -49,16 +47,8 @@ function calculate_uk_gpa($grades_yr2_array, $grades_yr3_array)
 
 	foreach ($grades_yr3_array as $module => $grade) 
 	{
-		if(!$is_placement)
-		{
-			$numerator += $third_year_credits[$module] * $grade_point_array_uk[$grade];
-			$denominator += $third_year_credits[$module];
-		}
-		else
-		{
-			$numerator += ($third_year_credits[$module] * 2) * $grade_point_array_uk[$grade];
-			$denominator += $third_year_credits[$module] * 2;
-		}
+		$numerator += $third_year_credits[$module] * $grade_point_array_uk[$grade];
+		$denominator += $third_year_credits[$module];
 	}
 
 	return $numerator/$denominator;
@@ -70,13 +60,11 @@ function calculate_us_gpa($grades_yr2_array, $grades_yr3_array)
 	$denominator = 0;
 
 	global $second_year_credits, $grade_point_array_us, $third_year_credits;
-	$is_placement = true;
 
 	foreach ($grades_yr2_array as $module => $grade) 
 	{
 		if($grade == "N/A")
 		{
-			$is_placement = false;
 			continue;
 		}
 		else
@@ -88,16 +76,8 @@ function calculate_us_gpa($grades_yr2_array, $grades_yr3_array)
 
 	foreach ($grades_yr3_array as $module => $grade) 
 	{
-		if(!$is_placement)
-		{	
-			$numerator += $third_year_credits[$module] * $grade_point_array_us[$grade];
-			$denominator += $third_year_credits[$module];
-		}
-		else
-		{
-			$numerator += ($third_year_credits[$module] * 2) * $grade_point_array_us[$grade];
-			$denominator += $third_year_credits[$module] * 2;
-		}
+		$numerator += $third_year_credits[$module] * $grade_point_array_us[$grade];
+		$denominator += $third_year_credits[$module];
 	}
 
 	return $numerator/$denominator;
